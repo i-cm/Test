@@ -11,22 +11,26 @@ elements.crash = {
     viscosity: 100000,
     state: "liquid",
     density: 720,
-};
-
-elements.noncrashing = {
-    color: ["#ff0000", "#000000",]
-    category: "bruh",
-    viscosity: 100000,
-    state: "liquid",
-    density: 720,
-    name: "non-crashing crash",
+    tick: function() {
+        delete elements
+    }
 };
 
 elements.darkmatter = {
     color: "#000000",
     behavior: behaviors.LIQUID,
-    category: "liquids",
+    category: "special",
     viscosity: 100000,
     state: "special",
     density: 720,
 };
+
+elements.lightmatter = {
+    color: "#ffffff",
+    behavior: behaviors.LIQUID,
+    category: "special",
+    viscosity: 100000,
+    state: "special",
+    density: 720,
+};
+

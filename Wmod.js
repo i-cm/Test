@@ -13,6 +13,14 @@ elements.crash = {
     density: 720,
 };
 
+elements["non-crashing crash"] = {
+    color: ["#ff0000", "#000000",]
+    category: "bruh",
+    viscosity: 100000,
+    state: "liquid",
+    density: 720,
+};
+
 elements.darkmatter = {
     color: "#000000",
     behavior: behaviors.LIQUID,

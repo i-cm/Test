@@ -13,12 +13,13 @@ elements.crash = {
     density: 720,
 };
 
-elements["non-crashing crash"] = {
+elements.noncrashing = {
     color: ["#ff0000", "#000000",]
     category: "bruh",
     viscosity: 100000,
     state: "liquid",
     density: 720,
+    name: "non-crashing crash",
 };
 
 elements.darkmatter = {

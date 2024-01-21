@@ -50,3 +50,56 @@ elements.outliner = {
     state: "special",
     density: 720,
 };
+
+elements.energium = {
+    name: "Solid Energium",
+    color: "#ffff00",
+    behavior: behaviors.POWDER,
+    category: "energy",
+    state: "solid",
+    density: 15,
+    temp: -273,
+    tempHigh: 0,
+    stateHigh: "molten_energium",
+    
+};
+elements.molten_energium = {
+    name:"Energium",
+    color:"#ffff88",
+    behavior: behaviors.LIQUID,
+    category: "energy",
+    state: "liquid",
+    density: 10,
+    temp: 0,
+    tempHigh: 1000,
+    stateHigh: "energium_gas",
+    tempLow: -1,
+    stateLow: "energium",
+    
+};
+
+elements.energium_gas = {
+    name:"Energium Gas",
+    color:"#ffffbb",
+    behavior: behaviors.GAS,
+    category: "states",
+    state: "gas",
+    density: 5,
+    temp: 1000,
+    tempLow: 999,
+    stateLow: "molten_energium",
+    tempHigh: 1000000,
+    stateHigh: "pure_energium",
+};
+
+elements.pure_energium = {
+    name:"Pure Energium",
+    color:"#ffffff",
+    behavior: behaviors.LIQUID,
+    category: "states",
+    state: "gas",
+    density: 5,
+    temp: 1000000,
+    
+};
+

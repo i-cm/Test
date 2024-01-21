@@ -107,6 +107,7 @@ elements.godlyheat = {
     color: ["#ff0000", "#ffff00", "#ff0000", "#ffff00", "#ff0000", "#ffff00"],
     tool: function(pixel) {
         pixel.temp *= 1.01
+        pixel.temp += 500
 		pixelTempCheck(pixel)
     },
     category: "tools",
@@ -115,6 +116,7 @@ elements.godlycool = {
     color: ["#0000ff", "#00ffff", "#0000ff", "#00ffff", "#0000ff", "#00ffff"],
     tool: function(pixel) {
         pixel.temp /= 1.01
+	    pixel.temp -= 500
 		pixelTempCheck(pixel)
     },
     category: "tools",
